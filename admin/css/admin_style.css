@@ -1,0 +1,119 @@
+/* Tambahkan kustomisasi CSS sesuai kebutuhan */
+
+/* Contoh: Membuat footer di bagian bawah halaman */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.container-fluid {
+    flex: 1;
+    display: flex;
+    padding: 0;
+}
+.sidebar {
+    flex: 0 0 200px;
+    padding: 0;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Sesuaikan dengan tinggi footer */
+    line-height: 60px; /* Sesuaikan dengan tinggi footer */
+    background-color: #f5f5f5;
+    text-align: center;
+}
+/* Custom CSS untuk login form */
+body.signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .btn {
+    font-size: 16px;
+    padding: 10px;
+}
+.navbar-nav {
+    flex-direction: column;
+        }
+.nav-item {
+width: 100%;
+}
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+   background-color: #495057;
+        }
+
+.top {
+            font-size: 28px;
+            background-color: #e6e6e6;
+            text-align: center;
+            padding: 8px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 -20px 15px -10px rgba(155, 155, 155, 0.3) inset,
+                0 20px 15px -10px rgba(155, 155, 155, 0.3) inset,
+                0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+.login-container {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 10%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+.login-logo {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+.form-signin .form-control {
+            margin-bottom: 10px;
+        }
+
+.page-header {
+            margin-top: 20px;
+        }
+.table img {
+            width: 80px;
+            height: 80px;
+        }
+.table th, .table td {
+            vertical-align: middle;
+        }
+        

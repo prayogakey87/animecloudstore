@@ -1,0 +1,22 @@
+<?php
+include ('../db.php');
+    $username = "admin";
+    $password = "admin";
+    // Hash password
+    $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+
+    // Query to insert admin user into database
+    $query = "INSERT INTO admin (username, password) VALUES ('$username', '$hashed_password')";
+
+    if (mysqli_query($con, $query)) {
+        // Jika berhasil ditambahkan
+        $_SESSION['success_message'] = "Admin user added successfully.";
+        header("Location: admin_dashboard.php"); // Redirect ke halaman dashboard admin
+        exit();
+    } else {
+        // Jika gagal ditambahkan
+        $_SESSION['error_message'] = "Error: " . mysqli_error($con);
+        header("Location: add_admin.php"); // Redirect kembali ke halaman add_admin.php dengan pesan error
+        exit();
+    }
+?>
